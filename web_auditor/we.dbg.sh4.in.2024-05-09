@@ -1,0 +1,64 @@
+SSLyze - Checks for OCSP Stapling.
+------------------------
+
+usage: sslyze [-h] [--update_trust_stores] [--cert CERTIFICATE_FILE]
+              [--key KEY_FILE] [--keyform KEY_FORMAT] [--pass PASSPHRASE]
+              [--json_out JSON_FILE] [--targets_in TARGET_FILE] [--quiet]
+              [--slow_connection] [--https_tunnel PROXY_SETTINGS]
+              [--starttls PROTOCOL] [--xmpp_to HOSTNAME]
+              [--sni SERVER_NAME_INDICATION] [--reneg] [--elliptic_curves]
+              [--heartbleed] [--sslv3] [--robot] [--http_headers] [--certinfo]
+              [--certinfo_ca_file CERTINFO_CA_FILE] [--sslv2] [--tlsv1_3]
+              [--tlsv1_2] [--tlsv1_1] [--compression] [--openssl_ccs]
+              [--tlsv1] [--resum] [--resum_attempts RESUM_ATTEMPTS]
+              [--early_data] [--fallback]
+              [--mozilla_config {modern,intermediate,old,disable}]
+              [target ...]
+sslyze: error: argument --certinfo: ignored explicit argument 'basic'
+
+
+Nikto - Checks for any interesting files on the Domain.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
++ Target IP:          185.199.108.153
++ Target Hostname:    sh4.in
++ Target Port:        80
++ Start Time:         2024-05-09 16:32:57 (GMT-4)
+---------------------------------------------------------------------------
++ Server: GitHub.com
++ Root page / redirects to: https://sh4.in/
+
+
+Nikto - Checks for Server Issues.
+------------------------
+
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
++ Target IP:          185.199.108.153
++ Target Hostname:    sh4.in
++ Target Port:        80
++ Start Time:         2024-05-09 16:32:59 (GMT-4)
+---------------------------------------------------------------------------
++ Server: GitHub.com
++ Root page / redirects to: https://sh4.in/
+
+
+Joomla Checker - Checks for Joomla Installation.
+------------------------
+
+--2024-05-09 16:32:59--  http://sh4.in/administrator
+Resolving sh4.in (sh4.in)... 185.199.108.153, 185.199.109.153, 185.199.110.153, ...
+Connecting to sh4.in (sh4.in)|185.199.108.153|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://sh4.in/administrator [following]
+--2024-05-09 16:32:59--  https://sh4.in/administrator
+Connecting to sh4.in (sh4.in)|185.199.108.153|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2024-05-09 16:32:59 ERROR 404: Not Found.
+
+
+
